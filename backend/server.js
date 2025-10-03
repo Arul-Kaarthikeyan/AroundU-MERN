@@ -21,14 +21,7 @@ app.use(cors());
 app.use(express.json());
 
 // --- Mongoose models ---
-mongoose.connect(
-  process.env.MONGO_URI || "mongodb://localhost:27017/nearbychat",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
-
+mongoose.connect( process.env.MONGO_URI);
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
