@@ -36,6 +36,9 @@ export default function NearbyList({ token, onOpenRoom }) {
       {nearby.length === 0 && (
         <center>
           <div className="no-item">Nobody is around right now</div>
+           <p className="no-item" style={{ fontSize: "0.8em" }}>
+            “Please enable your location and allow access to start chatting.”
+          </p>
         </center>
       )}
       <div>
